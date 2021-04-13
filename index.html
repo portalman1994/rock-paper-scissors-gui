@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Rock Paper Scissors</title>
+      <style>   
+            body {
+                font-size: 14px;
+                font-family: arial,sans-serif;
+                background-image: url("./rps.png");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                height: 650px;
+
+            }
+            .btn {
+                cursor: pointer;
+                border: 1px solid #fff;
+                border-radius: 60px;
+                margin-bottom: 20px;
+                margin-left: 20px;
+                margin-right: 20px;
+                outline: none;
+            }
+            .btn:hover {
+                box-shadow: 2px 1px 4px #000000;
+            }
+            .menu {
+                background-color: #ffffff;
+                opacity: 0.8;
+                width: 600px;
+                margin-right: auto;
+                margin-left: auto;
+                text-align: center;
+            }
+            .container {
+                text-align: center;
+            }
+            .score {
+                display: block;
+                height: 100px;
+                background-color: #ffffff;
+                opacity: 0.8;  
+            }
+            .message {
+                font-weight: bold;
+                font-size: 20px;
+            }
+            .playerScore {
+                display: inline;
+                text-align: left;
+                padding: 10px;
+                float: left;
+                font-weight: bold;
+                font-size: 20px;
+            }
+            .computerScore {
+                display: inline;
+                padding: 10px;
+                text-align: right;     
+                float: right;
+                font-weight: bold;
+                font-size: 20px;
+            }
+            .scoreMessage {
+                font-weight: bold;
+                font-size: 30px;
+                padding: 10px;
+
+            }
+        </style>
+    </head>
+<body>
+<div id="container" class="container">
+    <div class="menu">
+        <h1>Rock Paper Scissors</h1>
+        <h3><i>5 rounds. Man vs. Computer. 1 winner.</i></h3>
+        <h3>Choose your sign:</h3>
+    <button class="btn" value="rock" id="rock"><img src="./rock.png" width="125px" height="125px">
+        <h1>Rock</h1></button>
+    <button class="btn" value="paper" id="paper"><img src="./paper.png" width="125px" height="125px">
+        <h1>Paper</h1>
+    </button>
+    <button class="btn" value="scissors" id="scissors"><img src="./scissors.png" width="125px" height="125px">
+    <h1>Scissors</h1></button>
+    <div id="message" class="message"></div>
+    <div class="score">
+        <div class="playerScore" id="playerScore">Player Score: 0</div>
+        <div class="computerScore" id="computerScore">Computer Score: 0</div>
+    </div>
+    <div id="scoreMessage" class="scoreMessage"></div>  
+    </div>       
+</div>
+<script src="script.js"></script>
+</body>
+</html>
